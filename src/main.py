@@ -7,15 +7,33 @@ from data_loading import load_audio_files, AudioDataset
 from models import get_resnet
 from training import train_model
 
+def load_labels(label_file_path):
+    """
+    Load labels from a text file.
+
+    Args:
+        label_file_path (str): Path to the label file.
+
+    Returns:
+        np.ndarray: Array of labels.
+    """
+    with open(label_file_path, 'r') as file:
+        labels = file.read().splitlines()
+    labels = np.array(labels, dtype=int)
+    return labels
+
 def main():
     # File paths
     input_path = 'C:/Users/ramis/OneDrive - nyu.edu/Desktop/New ML Project/train_output'
+    label_file_path = 'path/to/your/labels.txt'
     num_files = 11886
     
     # Load and preprocess audio data
     train_file_paths = [f'{input_path}/{i}/vocals.wav' for i in range(num_files)]
     train_mel_spectrograms = load_audio_files(train_file_paths)
-    train_labels = np.load('path/to/your/labels.npy')  # Load your labels from a file
+    
+    # Load labels from text file
+    train_labels = load_labels(label_file_path)
 
     # Split data into training and validation sets
     train_mel_spectrograms, val_mel_spectrograms, train_labels, val_labels = train_test_split(
@@ -39,4 +57,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
