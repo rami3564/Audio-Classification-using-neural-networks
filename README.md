@@ -1,4 +1,8 @@
-# Audio-Classification-using-neural-networks
+# Male/Female Audio-Classification-using-neural-networks
+
+**Task:**
+> To train a custom model to classify songs into 4 categories (male, female, both, none)
+
 **Overview**
 
 This project focuses on the classification of audio data using a custom ResNet inspired model tailored to work with Mel spectrograms. The repository contains the code and resources necessary to preprocess audio files, train a ResNet-based neural network, and evaluate its performance on the given dataset. This project was part of a Kaggle competition at my college where we had to achieve 80% accuracy on the test dataset. With this model, I was able to achieve >99% accuracy on my training dataset and ~80% accuracy on the test dataset.
