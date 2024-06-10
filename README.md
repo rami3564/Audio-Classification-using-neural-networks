@@ -1,7 +1,7 @@
 # Audio-Classification-using-neural-networks
 **Overview**
 
-This project focuses on the classification of audio data using a custom ResNet model tailored to work with Mel spectrograms. The repository contains the code and resources necessary to preprocess audio files, train a ResNet-based neural network, and evaluate its performance on the given dataset.
+This project focuses on the classification of audio data using a custom ResNet inspired model tailored to work with Mel spectrograms. The repository contains the code and resources necessary to preprocess audio files, train a ResNet-based neural network, and evaluate its performance on the given dataset. This project was part of a Kaggle competition at my college where we had to achieve 80% accuracy on the test dataset. With this model, I was able to achieve >99% accuracy on my training dataset and ~80% accuracy on the test dataset.
 
 **Key Features**
 
@@ -40,7 +40,6 @@ GPU for training (recommended: Google Colab with GPU support)
 **Challenges and Learnings**
 > Encountered significant computational challenges due to hardware limitations
 > Utilized Google Colab's GPU services but faced data upload constraints and computation quotas
-> Final model achieved high accuracy but missed competition deadlines due to prolonged processing times
 
 
 **Contributing**
