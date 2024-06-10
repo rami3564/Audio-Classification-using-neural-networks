@@ -46,7 +46,7 @@ GPU for training (recommended: Google Colab with GPU support)
 > Utilized Google Colab's GPU services but faced data upload constraints and computation quotas
 
 
-**Contributing**
+
 
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
 
